@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 
 # Dados: semanas e matrículas
 # Ler o CSV
-df = pd.read_csv('.gitignore/dados.csv')
+df = pd.read_csv('dados.csv')
 semanas = df[['semana']].values  # 2D
 matriculas = df['matriculas'].values  # 1D
 
