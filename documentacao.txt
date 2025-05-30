@@ -1,0 +1,49 @@
+## Documentação – Previsão de Matrículas Semanais com Regressão Linear
+
+### 1. Arquivo de Dados: `dados.csv`
+
+O arquivo `dados.csv` contém o histórico de matrículas realizadas semanalmente, abrangendo o período de 01/08/2023 a 
+26/05/2025, totalizando 95 semanas.
+
+Colunas:
+
+semana: número sequencial da semana (inteiro de 1 a 95).
+matriculas: quantidade total de matrículas registradas naquela semana.
+
+---
+
+### 2. Objetivo
+
+Desenvolver um modelo de regressão capaz de prever a quantidade de matrículas por semana. Para isso, são avaliadas três 
+abordagens distintas, sendo selecionada a que apresentar o menor erro médio quadrado (MSE).
+
+---
+
+### 3. Modelos Utilizados
+
+Regressão Linear Simples (LinearRegression): modelo estatístico tradicional para prever uma variável contínua.
+
+Regressão com Regularização L2 (Ridge): variação da regressão linear que penaliza coeficientes elevados para 
+                                        evitar sobreajuste.
+
+Random Forest Regressor (RandomForestRegressor): modelo baseado em múltiplas árvores de decisão, utilizado para 
+                                                 apturar relações não-lineares.
+
+---
+
+### 4. Métrica de Avaliação
+
+Erro Médio Quadrado (MSE – Mean Squared Error): métrica utilizada para avaliar a performance dos modelos. Representa a 
+média dos quadrados dos erros entre os valores reais e os valores previstos. Quanto menor o MSE, melhor o desempenho do 
+modelo.
+
+---
+
+### 5. Etapas do Código
+
+1. Carregamento dos dados a partir do arquivo CSV.
+2. Separação dos dados em conjuntos de treino e teste.
+3. Treinamento dos três modelos propostos.
+4. Cálculo do MSE para cada modelo.
+5. Seleção do modelo com menor MSE.
+6. Exibição das previsões realizadas pelo modelo selecionado.
