@@ -40,7 +40,7 @@ melhor_nome, melhor_dados = min(resultados.items(), key=lambda x: x[1]['mse'])
 meta = int(os.getenv("META"))
 
 # Soma das três primeiras previsões
-soma_prevista = np.sum(melhor_dados['predicoes'][:3])
+soma_prevista = np.sum(melhor_dados['predicoes'][:2])
 
 # Atingimento da meta (%)
 atingimento = (soma_prevista / meta) * 100
